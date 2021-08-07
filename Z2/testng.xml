@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.Utils.Listeners"/></listeners>
+
+
+  <test  name="Test">
+  <parameter name="Email" value="anmol.kaur@testingxperts.com"/>
+<parameter name="Password" value="Molu@123"/>
+  <classes>
+ <class name="com.TestCases.Scenario1"/>
+  <class name="com.TestCases.Scenario2"/>
+  <class name="com.TestCases.Scenario3"/>
+  <class name="com.TestCases.Scenario4"/>
+  <class name="com.TestCases.Scenario5"/>
+  <class name="com.TestCases.Scenario6"/>
+  <class name="com.TestCases.Scenario7"/>
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

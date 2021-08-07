@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]" parallel="none">
+  <parameter name="Email" value="anmol.kaur@testingxperts.com"/>
+  <parameter name="Password" value="Molu@123"/>
+  <listeners>
+    <listener class-name="com.Utils.Listeners"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none">
+    <parameter name="Email" value="anmol.kaur@testingxperts.com"/>
+    <parameter name="Password" value="Molu@123"/>
+    <classes>
+      <class name="com.TestCases.Scenario3">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="Initialize"/>
+        </methods>
+      </class> <!-- com.TestCases.Scenario3 -->
+      <class name="com.TestCases.Scenario4">
+        <methods>
+          <include name="validatePrice"/>
+          <include name="setup"/>
+          <include name="ValidateCount"/>
+          <include name="DeleteItems"/>
+          <include name="ValidateLabel"/>
+        </methods>
+      </class> <!-- com.TestCases.Scenario4 -->
+      <class name="com.TestCases.Scenario5">
+        <methods>
+          <include name="T1"/>
+        </methods>
+      </class> <!-- com.TestCases.Scenario5 -->
+      <class name="com.TestCases.Scenario1">
+        <methods>
+          <include name="setup"/>
+          <include name="InitiializeObj"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- com.TestCases.Scenario1 -->
+      <class name="com.TestCases.Scenario7">
+        <methods>
+          <include name="CountryLinks"/>
+          <include name="fOOTERLINKS"/>
+        </methods>
+      </class> <!-- com.TestCases.Scenario7 -->
+      <class name="com.TestCases.Scenario2">
+        <methods>
+          <include name="CheckInboxes"/>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="Initialize"/>
+          <include name="ValidateQuantity"/>
+        </methods>
+      </class> <!-- com.TestCases.Scenario2 -->
+      <class name="com.TestCases.Scenario6">
+        <methods>
+          <include name="SignOut"/>
+          <include name="WrongCredentials"/>
+          <include name="SignIn"/>
+        </methods>
+      </class> <!-- com.TestCases.Scenario6 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

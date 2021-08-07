@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">5</td><td class="numi">5</td><td class="numi_attn">10</td><td class="numi_attn">2</td><td class="numi">521.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">com.TestCases.Scenario4</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1627056764762</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">com.TestCases.Scenario2</td><td><a href="#m2"><b>CheckInboxes</b>  </a></td><td class="numi">1</td><td>1627056347546</td><td class="numi">58366</td></tr><tr class="failedodd"><td><a href="#m3"><b>ValidateQuantity</b>  </a></td><td class="numi">1</td><td>1627056421264</td><td class="numi">43312</td></tr>
+<tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="2">com.TestCases.Scenario4</td><td><a href="#m4"><b>setup</b>  </a></td><td class="numi">3</td><td>1627056789700</td><td class="numi">6</td></tr><tr class="skippedodd"><td><a href="#m5"><b>Initialize</b>  </a></td><td class="numi">4</td><td>1627056789689</td><td class="numi">17</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.TestCases.Scenario6</td><td><a href="#m6"><b>close</b>  </a></td><td class="numi">3</td><td>1627056789693</td><td class="numi">3</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.TestCases.Scenario7</td><td><a href="#m7"><b>initialize</b>  </a></td><td class="numi">2</td><td>1627056789697</td><td class="numi">1</td></tr>
+<tr class="skippedeven"><td rowspan="2">com.TestCases.Scenario6</td><td><a href="#m8"><b>Signin</b>  </a></td><td class="numi">3</td><td>1627056789689</td><td class="numi">7</td></tr><tr class="skippedeven"><td><a href="#m9"><b>setup</b>  </a></td><td class="numi">3</td><td>1627056789689</td><td class="numi">6</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.TestCases.Scenario7</td><td><a href="#m10"><b>setup</b>  </a></td><td class="numi">2</td><td>1627056789696</td><td class="numi">2</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.TestCases.Scenario4</td><td><a href="#m11"><b>close</b>  </a></td><td class="numi">4</td><td>1627056789689</td><td class="numi">17</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.TestCases.Scenario7</td><td><a href="#m12"><b>close</b>  </a></td><td class="numi">2</td><td>1627056789697</td><td class="numi">2</td></tr>
+<tr class="skippedeven"><td rowspan="3">com.TestCases.Scenario5</td><td><a href="#m13"><b>setup</b>  </a></td><td class="numi">1</td><td>1627056789689</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m14"><b>close</b>  </a></td><td class="numi">1</td><td>1627056789689</td><td class="numi">0</td></tr><tr class="skippedeven"><td><a href="#m15"><b>Initialize</b>  </a></td><td class="numi">1</td><td>1627056789689</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="1">com.TestCases.Scenario7</td><td><a href="#m16"><b>CountryLinks</b>  </a></td><td class="numi">1</td><td>1627056789697</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.TestCases.Scenario4</td><td><a href="#m17"><b>DeleteItems</b>  </a></td><td class="numi">1</td><td>1627056789705</td><td class="numi">1</td></tr>
+<tr class="skippedodd"><td rowspan="2">com.TestCases.Scenario6</td><td><a href="#m18"><b>SignIn</b>  </a></td><td class="numi">1</td><td>1627056789693</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m19"><b>SignOut</b>  </a></td><td class="numi">1</td><td>1627056789695</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.TestCases.Scenario5</td><td><a href="#m20"><b>T1</b>  </a></td><td class="numi">1</td><td>1627056789689</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="2">com.TestCases.Scenario4</td><td><a href="#m21"><b>ValidateCount</b>  </a></td><td class="numi">1</td><td>1627056789703</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m22"><b>ValidateLabel</b>  </a></td><td class="numi">1</td><td>1627056789689</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.TestCases.Scenario6</td><td><a href="#m23"><b>WrongCredentials</b>  </a></td><td class="numi">1</td><td>1627056789696</td><td class="numi">0</td></tr>
+<tr class="skippedodd"><td rowspan="1">com.TestCases.Scenario7</td><td><a href="#m24"><b>fOOTERLINKS</b>  </a></td><td class="numi">1</td><td>1627056789699</td><td class="numi">0</td></tr>
+<tr class="skippedeven"><td rowspan="1">com.TestCases.Scenario4</td><td><a href="#m25"><b>validatePrice</b>  </a></td><td class="numi">1</td><td>1627056789706</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.TestCases.Scenario1</td><td><a href="#m26"><b>T1</b>  </a></td><td class="numi">1</td><td>1627056281301</td><td class="numi">394</td></tr>
+<tr class="passedeven"><td rowspan="1">com.TestCases.Scenario3</td><td><a href="#m27"><b>T1</b>  </a></td><td class="numi">1</td><td>1627056716815</td><td class="numi">46985</td></tr>
+<tr class="passedodd"><td rowspan="2">com.TestCases.Scenario1</td><td><a href="#m28"><b>T2_T3</b>  </a></td><td class="numi">1</td><td>1627056302636</td><td class="numi">474</td></tr><tr class="passedodd"><td><a href="#m29"><b>T4</b>  </a></td><td class="numi">1</td><td>1627056316161</td><td class="numi">12069</td></tr>
+<tr class="passedeven"><td rowspan="1">com.TestCases.Scenario2</td><td><a href="#m30"><b>displayed</b>  </a></td><td class="numi">1</td><td>1627056532486</td><td class="numi">5153</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">com.TestCases.Scenario4:setup</h2>
+<div style="padding-left:3em">
+<p>no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=91.0.4472.164)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-RRO4KGR3&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SUMITK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58429}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ce3ada324e97f4f96f154cdfc80cf34b</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+<br/>at objectsFactory.BasePage.InitializeDriver(BasePage.java:56)
+<br/>at com.TestCases.BaseTest.setup(BaseTest.java:19)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+<br/>at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.TestCases.Scenario2:ValidateQuantity</h2>
+<div style="padding-left:3em">
+<p>expected [2] but found [2]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:165)
+<br/>at com.TestCases.Scenario2.ValidateQuantity(Scenario2.java:40)
+<br/>29 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.TestCases.Scenario2:CheckInboxes</h2>
+<div style="padding-left:3em">
+<p>element not interactable
+  (Session info: chrome=91.0.4472.164)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-RRO4KGR3&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.164, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SUMITK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58586}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cbbb66a7ccca815b4468ec066d521055</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at com.TestCases.Scenario2.CheckInboxes(Scenario2.java:57)
+<br/>29 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.TestCases.Scenario4:Initialize</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.TestCases.Scenario6:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.TestCases.Scenario7:initialize</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.TestCases.Scenario7:initialize</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.TestCases.Scenario6:Signin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.TestCases.Scenario6:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.TestCases.Scenario4:Initialize</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.TestCases.Scenario4:Initialize</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.TestCases.Scenario6:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.TestCases.Scenario4:Initialize</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.TestCases.Scenario4:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.TestCases.Scenario6:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.TestCases.Scenario7:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.TestCases.Scenario4:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.TestCases.Scenario6:Signin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.TestCases.Scenario6:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.TestCases.Scenario4:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.TestCases.Scenario6:Signin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.TestCases.Scenario4:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.TestCases.Scenario4:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.TestCases.Scenario7:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.TestCases.Scenario6:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.TestCases.Scenario5:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.TestCases.Scenario5:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.TestCases.Scenario4:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.TestCases.Scenario7:close</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.TestCases.Scenario5:Initialize</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.TestCases.Scenario4:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.TestCases.Scenario7:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.TestCases.Scenario6:WrongCredentials</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.TestCases.Scenario4:DeleteItems</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">com.TestCases.Scenario5:T1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">com.TestCases.Scenario7:fOOTERLINKS</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">com.TestCases.Scenario6:SignIn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">com.TestCases.Scenario4:ValidateLabel</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">com.TestCases.Scenario6:SignOut</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">com.TestCases.Scenario7:CountryLinks</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">com.TestCases.Scenario4:ValidateCount</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">com.TestCases.Scenario4:validatePrice</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">com.TestCases.Scenario1:T2_T3</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">com.TestCases.Scenario1:T4</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">com.TestCases.Scenario3:T1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">com.TestCases.Scenario2:displayed</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">com.TestCases.Scenario1:T1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

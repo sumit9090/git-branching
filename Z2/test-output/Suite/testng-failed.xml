@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.Utils.Listeners"/>
+  </listeners>
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.TestCases.Scenario7">
+        <methods>
+          <include name="setup"/>
+          <include name="close"/>
+          <include name="initialize"/>
+          <include name="fOOTERLINKS"/>
+        </methods>
+      </class> <!-- com.TestCases.Scenario7 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
